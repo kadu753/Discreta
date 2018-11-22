@@ -23,17 +23,17 @@ def funcoes(nFuncao, n, a):
 def escrever(nFuncao, a):
 	with open('recorrencias', 'a') as arquivo:
 		if nFuncao == 0:
-			arquivo.write('\n\n(a) an = 6an−1 − 12an−2 + 8an−3 + n3n:\n')
+			arquivo.write('\n\n(a) an = 6 * an−1 − 12 * an−2 + 8 * an−3 + n * 3 ˆ n:\n')
 		elif nFuncao == 1:
-			arquivo.write('\n\n(b) an = 6an−1 − 12an−2 + 8an−3 + n2n:\n')
+			arquivo.write('\n\n(b) an = 6 * an−1 − 12 * an−2 + 8 * an−3 + n * 2 ^ n:\n')
 		elif nFuncao == 2:
-			arquivo.write('\n\n(c) an = 6an−1 − 12an−2 + 8an−3 + n23n:\n')
+			arquivo.write('\n\n(c) an = 6 * an−1 − 12 * an−2 + 8 * an−3 + n ˆ 2 * 3 ˆ n:\n')
 		elif nFuncao == 3:
-			arquivo.write('\n\n(d) an = 6an−1 − 12an−2 + 8an−3 + n22n:\n')
+			arquivo.write('\n\n(d) an = 6 * an−1 − 12 * an−2 + 8 * an−3 + n ˆ 2 * 2 ˆ n::\n')
 		elif nFuncao == 4:
-			arquivo.write('\n\n(e) an = 6an−1 −12an−2 +8an−3 +(n2 +2n−1)3n:\n')
+			arquivo.write('\n\n(e) an = 6 * an−1 − 12 * an−2 + 8 * an−3 + (n ^ 2 + 2 * n − 1) * 3 ˆ n:\n')
 		elif nFuncao == 5:
-			arquivo.write('\n\n(f) an = 6an−1 −12an−2 +8an−3 +(n2 +2n−1)2n\n')
+			arquivo.write('\n\n(f) an = 6 * an−1 − 12 * an−2 + 8 * an−3 +((n ^ 2 + 2 * n − 1) * 2 ˆ n:\n')
 		for i, pos in enumerate(a):
 				arquivo.write(str(i) + ' = ' + str(pos) + '\n')
 
